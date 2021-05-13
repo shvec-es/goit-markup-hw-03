@@ -1,0 +1,271 @@
+:root {
+  --primary-text-color: #212121; /*основной цвет текста*/
+  --text-color: #757575; /*вторичный цвет текста*/
+  --accent-color: #2196f3; /*цвет акцент*/
+  --black-color: #000000; /*цвет черный*/
+  --white-color: #ffffff; /*цвет белый*/
+  --footer-bg-color: #2f303a; /*цвет фона футера*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+  outline: 1px solid tomato;
+}
+
+/*logo*/
+.logo {
+  color: var(--black-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+/*site-nav*/
+.site-nav a {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+a.current {
+  color: var(--accent-color);
+}
+
+/*auth-nav*/
+.auth-nav a {
+  color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: var(--accent-color);
+}
+
+/*hero*/
+.hero {
+  text-align: center;
+}
+.hero-title {
+  margin-bottom: 30px;
+  color: var(--accent-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-button {
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+/*невидимый заголовок*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*section*/
+.section {
+  padding: 94px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-title-features {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/*team*/
+.img-team {
+  margin-bottom: 30px;
+}
+
+.section-title-team {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.section-p {
+  color: var(--text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*footer*/
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  /*padding-top: 25px;
+  padding-left: 35px;*/
+}
+
+.address {
+  color: var(--white-color);
+
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  /*padding-left: 35px;*/
+}
+
+.footer-list a {
+  color: rgba(255, 255, 255, 60%);
+
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+  color: var(--accent-color);
+}
+
+/*портфолио*/
+.filter-button-item {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.filter-button-item:hover,
+.filter-button-item:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.examples-list a {
+  text-decoration: none;
+}
+
+.examples-list h2 {
+  color: var(--primary-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-list p {
+  color: var(--text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
