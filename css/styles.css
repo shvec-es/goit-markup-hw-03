@@ -39,6 +39,10 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -255,10 +259,18 @@ a.current {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .team-item {
-  margin-right: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
 }
 
 .img-team {
@@ -267,13 +279,19 @@ a.current {
 
 .section-title-team {
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-/*footer*/
+.p-team {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*=============F O O T E R=================*/
 .footer {
   background-color: var(--footer-bg-color);
 }
@@ -290,9 +308,6 @@ a.current {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-
-  /*padding-top: 25px;
-  padding-left: 35px;*/
 }
 
 .address {
@@ -302,8 +317,6 @@ a.current {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  /*padding-left: 35px;*/
 }
 
 .footer-list a {
@@ -321,8 +334,23 @@ a.current {
   color: var(--accent-color);
 }
 
-/*портфолио*/
+/*=============P O R T F O L I O======================*/
+/*FILTER BUTTON*/
+.filter-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button-item {
+  padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -339,11 +367,34 @@ a.current {
   background-color: var(--accent-color);
 }
 
+.active-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+/*EXAMPLES*/
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.examples-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid #eeeeee;
+}
 .examples-list a {
   text-decoration: none;
 }
 
+.examples-list img {
+  margin-bottom: 20px;
+}
 .examples-list h2 {
+  margin-left: 24px;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 
   font-size: 18px;
@@ -352,6 +403,9 @@ a.current {
 }
 
 .examples-list p {
+  margin-left: 24px;
+  margin-bottom: 20px;
+
   color: var(--text-color);
 
   font-size: 16px;
