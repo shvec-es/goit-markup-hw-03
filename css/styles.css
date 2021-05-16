@@ -26,6 +26,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
   padding-right: 15px;
 
   width: 1200px;
-  outline: 1px solid tomato;
+  /*outline: 1px solid tomato;*/
 }
 
 /*===============H E A D E R==========*/
@@ -293,6 +294,8 @@ a.current {
 
 /*=============F O O T E R=================*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
 
@@ -311,6 +314,7 @@ a.current {
 }
 
 .address {
+  margin-bottom: 9px;
   color: var(--white-color);
 
   font-size: 14px;
@@ -332,6 +336,10 @@ a.current {
 .footer-list a:hover,
 .footer-list a:focus {
   color: var(--accent-color);
+}
+
+.mail-item {
+  margin-bottom: 9px;
 }
 
 /*=============P O R T F O L I O======================*/
@@ -383,17 +391,19 @@ a.current {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
-  border: 1px solid #eeeeee;
 }
+
 .examples-list a {
   text-decoration: none;
 }
 
-.examples-list img {
-  margin-bottom: 20px;
+.description-img {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: transparent;
 }
+
 .examples-list h2 {
-  margin-left: 24px;
   margin-bottom: 4px;
   color: var(--primary-text-color);
 
@@ -403,9 +413,6 @@ a.current {
 }
 
 .examples-list p {
-  margin-left: 24px;
-  margin-bottom: 20px;
-
   color: var(--text-color);
 
   font-size: 16px;
